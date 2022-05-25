@@ -68,4 +68,4 @@ df = pd.DataFrame(report)
 
 date = datetime.datetime.now().strftime("%Y%m%d_%H_%M")
 
-df.to_csv('email_report_' + date + '.csv', date_format='%Y%m%d_%H_%M')
+df.to_csv(r'/var/lib/emailchecker/' + 'email_report_' + date + '.csv', date_format='%Y%m%d_%H_%M')
